@@ -16,7 +16,7 @@ class About extends Component {
 
             <div className="banner-text">
               <p></p>
-              <p>I am a New York based Full Stack developer, and a graduate of the Flatiron School's Software Immersion Program. I have a natural passion for honing my existing programming skillsets, learning about new technologies, and adding new languages to my multilingual repertoire (which currently consists of English, Russian, Turkmen, and Turkish).
+              <p>New York based Full Stack developer & graduate of the Flatiron School's Software Immersion Program. I have a natural passion for honing my existing programming skillsets, learning about new technologies, and adding new languages to my multilingual repertoire (which currently consists of English, Russian, Turkmen, and Turkish).
               </p>
               <h1>My Stack</h1>
             <hr/>
