@@ -126,8 +126,8 @@ background: linear-gradient(to bottom, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, 
 /* contact page css */
 
 .avatar-img {
-  height: 250px;
-  padding-top: 5em;
+  height: 250px ;
+  padding-top: 3em;
 }
 
 .banner-text {
