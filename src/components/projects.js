@@ -7,7 +7,7 @@ class ProjectContainer extends React.Component {
 			<div>
 			<Project 
 				itemClass={"individual-project grey-project"}
-				src={"https://www.youtube.com/embed/9HkgTtW1-Xw"} 
+				src={"https://www.youtube.com/embed/j2nbcG0X0dc"} 
 				title={"My Portfilo"} 
 				p1={"React, ReactMDL, Ant Design "}
 				github={"https://github.com/pamykcharyyeva/Pamykch-portfolio"}
