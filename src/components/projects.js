@@ -15,9 +15,9 @@ class Projects extends Component {
       return(
         <div className="projects-grid">
           {/* Project 1 */}
-          <Card  style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #1</CardTitle>
-            <CardText>
+          <Card  style={{minWidth: '550', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '200px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #1</CardTitle>
+            <CardText style={{ height: '200px'}}>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
             </CardText>
             <CardActions border>
@@ -30,8 +30,8 @@ class Projects extends Component {
           </Card>
           {/* Project 2 */}
           <Card style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #2</CardTitle>
-            <CardText>
+            <CardTitle style={{color: '#fff', height: '200px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #2</CardTitle>
+            <CardText style={{ height: '200px'}}>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
             </CardText>
             <CardActions border>
@@ -44,8 +44,8 @@ class Projects extends Component {
           </Card>
           {/* Project 3 */}
           <Card style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #3</CardTitle>
-            <CardText>
+            <CardTitle style={{color: '#fff', height: '200px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #3</CardTitle>
+            <CardText style={{ height: '200px'}}>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
             </CardText>
             <CardActions border>
@@ -60,11 +60,42 @@ class Projects extends Component {
       )
     } else if(this.state.activeTab === 1) {
       return (
-        <div><h1>This is Ruby on Rails </h1></div>
+       
+          <div className="projects-grid">
+          {/* Project 1 */}
+          <Card  style={{minWidth: '550', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '200px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #1</CardTitle>
+            <CardText style={{ height: '200px'}}>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            </CardText>
+            <CardActions border>
+              <Button colored>FrontEnd</Button>
+              <Button colored>BackEnd</Button>
+            </CardActions>
+            <CardMenu style={{color: 'black'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+          </div>
       )
     } else if(this.state.activeTab === 2) {
       return (
-        <div><h1>JavaScript</h1></div>
+        <div className="projects-grid">
+        {/* Project 1 */}
+        <Card  style={{minWidth: '550', margin: 'auto'}}>
+          <CardTitle style={{color: '#fff', height: '200px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #1</CardTitle>
+          <CardText style={{ height: '200px'}}>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          </CardText>
+          <CardActions border>
+            <Button colored>FrontEnd</Button>
+            <Button colored>BackEnd</Button>
+          </CardActions>
+          <CardMenu style={{color: 'black'}}>
+            <IconButton name="share" />
+          </CardMenu>
+        </Card>
+        </div>
       )
     }
   }
