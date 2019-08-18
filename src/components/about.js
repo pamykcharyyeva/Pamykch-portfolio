@@ -9,11 +9,11 @@ class About extends Component {
         <Grid className="about-grid">
           <Cell col={12}>
             <img
-              src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/67676408_1183305678545499_6367252333004324864_n.jpg?_nc_cat=103&_nc_oc=AQlm1vadTLVltmi6lrtCLvWPsYz_cdOwF7MqorG_5d87rbEGTTlRHn0ihC8EIKNLbuBuK8VaNdv2NvppDurERDsR&_nc_ht=scontent-lga3-1.xx&oh=8956e54d105da1d0d807f6e051efb53c&oe=5E161604"
+              src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/68958551_1189987147877352_7006921444693114880_n.jpg?_nc_cat=101&_nc_oc=AQnVTZT8PC21jJVQy8nNSrbk5r9cERaE1OO0Tq0cQZxLA3rhDOA4oCSN2oz2HE7NGnrXftTMF3tqSZ_8WHOYors_&_nc_ht=scontent-lga3-1.xx&oh=5e2e507bd907f8f3fdcbd344325c39b3&oe=5DD8F675"
               alt="avatar"
               className="avatar-img"
               />
-
+            <p></p>
             <div className="banner-text">
               <p></p>
               <p>New York based Full Stack developer & graduate of the Flatiron School's Software Immersion Program. I have a natural passion for honing my existing programming skillsets, learning about new technologies, and adding new languages to my multilingual repertoire (which currently consists of English, Russian, Turkmen, and Turkish).

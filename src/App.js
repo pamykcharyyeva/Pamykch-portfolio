@@ -24,8 +24,8 @@ function App() {
                   <Main /> 
               </Content>
               <Footer className="footer" size="mini">
-                  <FooterSection type="left" logo="© 2019 Pamyk Charyyeva. All Rights Reserved.">
-                      <FooterLinkList>
+                  <FooterSection type="left" logo="© 2019 Pamyk Charyyeva. All Rights Reserved.">            
+                      <FooterLinkList type="right">
                       <div className="footer-social-links">
 
                             {/* LinkedIn */}
@@ -46,7 +46,8 @@ function App() {
 
                     </div>
                       </FooterLinkList>
-                  </FooterSection>
+                      </FooterSection>
+                
               </Footer>
 
           </Layout>
