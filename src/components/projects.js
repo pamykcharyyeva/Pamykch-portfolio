@@ -1,119 +1,48 @@
-import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import React from 'react'
+import Project from './project'
 
-
-class Projects extends Component {
-
-  constructor(props) {
-    super(props);
-    this.state = { activeTab: 0 };
-  }
-
-  toggleCategories() {
-
-    if(this.state.activeTab === 0){
-      return(
-        <div className="projects-grid">
-          {/* Project 1 */}
-          <Card  style={{minWidth: '550', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '200px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #1</CardTitle>
-            <CardText style={{ height: '200px'}}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            </CardText>
-            <CardActions border>
-              <Button colored>FrontEnd</Button>
-              <Button colored>BackEnd</Button>
-            </CardActions>
-            <CardMenu style={{color: 'black'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-          {/* Project 2 */}
-          <Card style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '200px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #2</CardTitle>
-            <CardText style={{ height: '200px'}}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            </CardText>
-            <CardActions border>
-            <Button colored>FrontEnd</Button>
-              <Button colored>BackEnd</Button>
-            </CardActions>
-            <CardMenu style={{color: 'black'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-          {/* Project 3 */}
-          <Card style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '200px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #3</CardTitle>
-            <CardText style={{ height: '200px'}}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            </CardText>
-            <CardActions border>
-            <Button colored>FrontEnd</Button>
-             <Button colored>BackEnd</Button>
-            </CardActions>
-            <CardMenu style={{color: 'black'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-        </div>
-      )
-    } else if(this.state.activeTab === 1) {
-      return (
-       
-          <div className="projects-grid">
-          {/* Project 1 */}
-          <Card  style={{minWidth: '550', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '200px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #1</CardTitle>
-            <CardText style={{ height: '200px'}}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            </CardText>
-            <CardActions border>
-              <Button colored>FrontEnd</Button>
-              <Button colored>BackEnd</Button>
-            </CardActions>
-            <CardMenu style={{color: 'black'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-          </div>
-      )
-    } else if(this.state.activeTab === 2) {
-      return (
-        <div className="projects-grid">
-        {/* Project 1 */}
-        <Card  style={{minWidth: '550', margin: 'auto'}}>
-          <CardTitle style={{color: '#fff', height: '200px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #1</CardTitle>
-          <CardText style={{ height: '200px'}}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-          </CardText>
-          <CardActions border>
-            <Button colored>FrontEnd</Button>
-            <Button colored>BackEnd</Button>
-          </CardActions>
-          <CardMenu style={{color: 'black'}}>
-            <IconButton name="share" />
-          </CardMenu>
-        </Card>
-        </div>
-      )
-    }
-  }
-  render() {
-    return(
-      <div >
-        <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-          <Tab>React</Tab>
-          <Tab>Ruby & Rails</Tab>
-          <Tab> JavaScript </Tab>
-        </Tabs>
-          <Grid>
-            <Cell col={12}>
-              <div className="content">{this.toggleCategories()}</div>
-            </Cell>
-          </Grid>
-      </div>
-    )
-  }
+class ProjectContainer extends React.Component {
+	render(){
+		return(
+			<div>
+			<Project 
+				itemClass={"individual-project blue-project"}
+				src={"https://www.youtube.com/watch?v=7T0ivP3Emeg&list=PLcFFFaP5zdCc3Dx2LsgPz8XgjQRb85YDX"} 
+				title={"Talk & Meet App"} 
+				p1={"Fullstack React/JS and Ruby/Rails Application, Bootstrap "}
+				p2={"Live chatting through Action Cable to access WebSockets"}
+				p3={"ChatRoom"}
+				github={"https://github.com/carlypecora/mod-5-project-frontend"}
+			/>
+			<Project 
+				itemClass={"individual-project grey-project"}
+				src={"https://www.youtube.com/watch?v=T4gTNVQcObk&list=PLcFFFaP5zdCc3Dx2LsgPz8XgjQRb85YDX&index=2"} 
+				title={"Catch the Hearts"} 
+				p1={"Game to Catch as much as possible Hearts"}
+				p2={"Frontend Javasript, HMTL, CSS"}
+				p3={"Backend Rub / Rails"}
+				github={"https://github.com/pamykcharyyeva?tab=stars"}
+			/>
+			<Project 
+				itemClass={"individual-project blue-project"}
+				src={"https://www.youtube.com/embed/8LaQP2Ko4C8"} 
+				title={"Postcard"} 
+				p1={"Fullstack Javascript and Ruby/Rails Application"}
+				p2={"Upload photos to a specific location on a map"}
+				p3={"View friends' maps"}
+				github={"https://github.com/carlypecora/Frontend-mod3"}
+			/>
+			<Project 
+				itemClass={"individual-project grey-project"}
+				src={"https://www.youtube.com/embed/DAs7lAifncY"} 
+				title={"mRDB"} 
+				p1={"Fullstack Ruby/Rails Application with Auth through BCrypt"}
+				p2={"Login and search from the Spotify API"}
+				p3={"View an artist's albums and rate an artist's songs"}
+			/>
+			</div>
+		)
+	}
 }
-export default Projects;
+
+export default ProjectContainer
