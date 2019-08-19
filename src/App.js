@@ -42,7 +42,10 @@ function App() {
                             <a href="https://twitter.com/pamyk_coding" rel="noopener noreferrer" target="_blank">
                               <i className="fa fa-twitter-square" aria-hidden="true" />
                             </a>
-
+                               {/* Medium */}
+                            <a href="https://medium.com/@pamyk.ch" rel="noopener noreferrer" target="_blank">
+                              <i className="fa fa-medium" aria-hidden="true" />
+                            </a>
 
                     </div>
                       </FooterLinkList>
