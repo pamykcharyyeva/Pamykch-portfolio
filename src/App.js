@@ -13,7 +13,7 @@ function App() {
                   <Navigation>
                     
                       <Link to="/about">About</Link>
-                      <Link to="/resume">Resume</Link>
+                      <Link to="/resume"> My Resume</Link>
                       <Link to="/projects">Projects</Link>
                       <Link to="/contact">Contact</Link>
                      
