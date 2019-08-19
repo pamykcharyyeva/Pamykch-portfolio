@@ -24,8 +24,9 @@ font-family: "Comic Sans MS", cursive, sans-serif;
   background: linear-gradient(to bottom, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
   position: scroll;
-  /* width: 100%;
-  height: 80%; */
+  margin:  auto;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
 
@@ -74,7 +75,7 @@ background: linear-gradient(to bottom, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, 
 
 
 /* contact page css */
-.nab-links {
+.nav-links {
   color: black;
 }
 
@@ -82,8 +83,8 @@ background: linear-gradient(to bottom, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, 
   
   margin: auto;
   position: scroll;
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   justify-content: center;
   padding-top: 2em;
 }
@@ -138,7 +139,7 @@ background: -webkit-linear-gradient(to bottom, #A7BFE8, #6190E8);  /* Chrome 10-
 background: linear-gradient(to bottom, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   opacity: .8;
-  width: 45%;
+  width: 70%;
   margin: auto;
   border-radius: 10px;
 }
